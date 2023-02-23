@@ -30,13 +30,14 @@ const Fromulario = ({ onHide, show, sendForm, DataForm, Opcion}) =>{
                 <Modal.Body>
                     <Form id="FormularioCrear" onSubmit={handleSubmit(onSubmit)}>
                         <Row>
+                            
                             <Col>
-                                <Form.Group controlId="nombre1">
-                                    <Form.Label>Primer Nombre</Form.Label>
+                                <Form.Group controlId="nombre">
+                                    <Form.Label>Nombre</Form.Label>
                                     <Form.Control 
-                                        name="nombre1" 
-                                        defaultValue={DataForm.nombre1} 
-                                        placeholder="Primer Nombre" 
+                                        name="nombre" 
+                                        defaultValue={DataForm.nombre} 
+                                        placeholder="Nombres" 
                                         readOnly={ Opcion === 1? true : false }
                                         //onKeyPress={(e) => SoloPalabras(e)}
                                         
@@ -47,28 +48,12 @@ const Fromulario = ({ onHide, show, sendForm, DataForm, Opcion}) =>{
                                 </Form.Group>
                             </Col>
                             <Col>
-                                <Form.Group controlId="nombre2">
-                                    <Form.Label>Segundo Nombre</Form.Label>
+                                <Form.Group controlId="apellido">
+                                    <Form.Label>Apellidos</Form.Label>
                                     <Form.Control 
-                                        name="nombre2" 
-                                        defaultValue={DataForm.nombre1} 
-                                        placeholder="Segundo Nombre" 
-                                        readOnly={ Opcion === 1? true : false }
-                                        //onKeyPress={(e) => SoloPalabras(e)}
-                                        
-                                    />
-                                    <Form.Text className="text-danger">
-                                        {/*errors.nombre && errors.nombre.message*/}
-                                    </Form.Text>
-                                </Form.Group>
-                            </Col>
-                            <Col>
-                                <Form.Group controlId="nombre3">
-                                    <Form.Label>Tercer Nombre</Form.Label>
-                                    <Form.Control 
-                                        name="nombre3" 
-                                        defaultValue={DataForm.nombre1} 
-                                        placeholder="Tercer Nombre" 
+                                        name="apellido" 
+                                        defaultValue={DataForm.apellido} 
+                                        placeholder="Apellidos" 
                                         readOnly={ Opcion === 1? true : false }
                                         //onKeyPress={(e) => SoloPalabras(e)}
                                         
@@ -79,59 +64,25 @@ const Fromulario = ({ onHide, show, sendForm, DataForm, Opcion}) =>{
                                 </Form.Group>
                             </Col>
 
-                            
+                            <Col>
+                                <Form.Group controlId="genero">
+                                    <Form.Label>Genero</Form.Label>
+                                    <Form.Control 
+                                        name="genero" 
+                                        defaultValue={DataForm.genero} 
+                                        placeholder="Genero" 
+                                        readOnly={ Opcion === 1? true : false }
+                                        //onKeyPress={(e) => SoloPalabras(e)}
+                                        
+                                    />
+                                    <Form.Text className="text-danger">
+                                        {/*errors.nombre && errors.nombre.message*/}
+                                    </Form.Text>
+                                </Form.Group>
+                            </Col>
                            
                         </Row>
-                        <Row>
-                        <Col>
-                                <Form.Group controlId="apellido1">
-                                    <Form.Label>Primer Apellido</Form.Label>
-                                    <Form.Control 
-                                        name="apellido1" 
-                                        defaultValue={DataForm.nombre1} 
-                                        placeholder="Primer Apellido" 
-                                        readOnly={ Opcion === 1? true : false }
-                                        //onKeyPress={(e) => SoloPalabras(e)}
-                                        
-                                    />
-                                    <Form.Text className="text-danger">
-                                        {/*errors.nombre && errors.nombre.message*/}
-                                    </Form.Text>
-                                </Form.Group>
-                            </Col>
-                            <Col>
-                                <Form.Group controlId="apellido2">
-                                    <Form.Label>Segundo Apellido</Form.Label>
-                                    <Form.Control 
-                                        name="apellido2" 
-                                        defaultValue={DataForm.nombre1} 
-                                        placeholder="Segundo Apellido" 
-                                        readOnly={ Opcion === 1? true : false }
-                                        //onKeyPress={(e) => SoloPalabras(e)}
-                                        
-                                    />
-                                    <Form.Text className="text-danger">
-                                        {/*errors.nombre && errors.nombre.message*/}
-                                    </Form.Text>
-                                </Form.Group>
-                            </Col>
-                            <Col>
-                                <Form.Group controlId="dpi">
-                                    <Form.Label>DPI</Form.Label>
-                                    <Form.Control 
-                                        name="dpi" 
-                                        defaultValue={DataForm.nombre1} 
-                                        placeholder="DPI" 
-                                        readOnly={ Opcion === 1? true : false }
-                                        //onKeyPress={(e) => SoloPalabras(e)}
-                                        
-                                    />
-                                    <Form.Text className="text-danger">
-                                        {/*errors.nombre && errors.nombre.message*/}
-                                    </Form.Text>
-                                </Form.Group>
-                            </Col>
-                        </Row>
+                        
                         <hr/>
                         <Row>
                             <Col>

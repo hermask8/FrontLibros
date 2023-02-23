@@ -38,9 +38,9 @@ class Index extends Component {
             toogleToastmsg : "",
             DataForm: {
                 id: null,
-                nombre1: null,
-                apellido1: null,
-                dpi: null
+                nombre: null,
+                apellido: null,
+                genero: null
             },
             contador: 0,
             Opcion: null,
@@ -96,9 +96,9 @@ class Index extends Component {
                 DataForm:
                 {
                     id: null,
-                    nombre1: null,
-                    apellido1: null,
-                    dpi: null
+                    nombre: null,
+                    apellido: null,
+                    genero: null
                 },
                 Opcion: 2,
                 block:!this.state.block,
@@ -167,15 +167,7 @@ class Index extends Component {
         return GetRecords(`User/all` );
     }
     
-    GetAllUni = () => {
-        //return GetRoute(`Unidad/allhabilitado`)
-    }
-    GetAllRen = () => {
-        //return GetRoute(`Renglon/allhabilitado`)
-    }
-    GetAllRol = () => {
-        //return GetRoute(`Rol/rolhabilitado`)
-    }
+   
     //GetAllRen= () => {return GetRoute(`Institucion/all`)}
     // *************************************************************
     // Funcion que guarda el registro
@@ -223,9 +215,9 @@ class Index extends Component {
             (
                 {
                     id: null,
-                    nombre1: null,
-                    apellido1: null,
-                    dpi: null,
+                    nombre: null,
+                    apellido: null,
+                    genero: null,
                     block:!this.state.block,
                     ModalToggle : !this.state.ModalToggle, 
                 }
@@ -250,7 +242,7 @@ class Index extends Component {
     // *************************************************************
     
     async Create(form) {
-        return await PostRecords(`Persona/insert`, form);
+        return await PostRecords(`User/insert_person`, form);
 
     }
     
@@ -258,20 +250,7 @@ class Index extends Component {
     // enviamos los datos para actualizar
     // *************************************************************
     
-    async Edit(id, form) {
-       // return await PutRoute(`Persona/updatePersona/${id}`, form);
-    }
-
-    async Edit2(id, form) {
-        //return await PutRoute(`Persona/updatePersonaUni/${id}`, form);
-    }
-
-    async EditRol(id, form) {
-        //return await PutRoute(`Persona/updatePersonaRol/${id}`, form);
-    }
-    async EditRen(id, form) {
-        //return await PutRoute(`Persona/updatePersonaRen/${id}`, form);
-    }
+    
 
     // *************************************************************
     // enviamos los datos para añadir un nuevo rol

@@ -2,13 +2,13 @@ import React, {Component} from 'react';
 import { Image } from 'react-bootstrap';
 import Zoom from 'react-reveal/Zoom';
 import './index.css';
-import Img from '../../../assets/img/brand/logo.png';
-import Img2 from '../../../assets/img/brand/logo.png';
-import Img3 from '../../../assets/img/brand/logo.png';
-import Img4 from '../../../assets/img/brand/logo.png';
-import Img5 from '../../../assets/img/brand/logo.png';
-import logo from '../../../assets/img/brand/logo.png';
-import mini from '../../../assets/img/brand/ministerio.png';
+import Img from '../../../assets/img/brand/book1.png';
+import Img2 from '../../../assets/img/brand/book2.png';
+import Img3 from '../../../assets/img/brand/book4.png';
+import Img4 from '../../../assets/img/brand/book1.png';
+import Img5 from '../../../assets/img/brand/book2.png';
+import logo from '../../../assets/img/brand/book4.png';
+import mini from '../../../assets/img/brand/book3.png';
 // import Bsvg from '../Storage/img/Login/background.svg';
 import { userService } from '../../../Services/user.service';
 //import Formulario from "./Form";
@@ -115,7 +115,8 @@ handleSubmit(e) {
                       </div>*/}
                       
                       <div className="header">
-                        <h2 className="Titulo"><Zoom top cascade>SIT</Zoom></h2>
+                        
+                        <h2 className="Titulo"><Zoom top cascade>My Adventure Mind</Zoom></h2>
                       </div>
                       <form className="FormInput" name="form" onSubmit={this.handleSubmit}>
                         <div className="input-wrapper">
@@ -160,7 +161,7 @@ handleSubmit(e) {
                           </div>
                         </div>
                         <div className="pt-1 text-center txt3 text-dark-light">
-                          <small><i className="fa fa-copyright"> </i> Todos los derechos reservados SIT</small>
+                          <small><i className="fa fa-copyright"> </i>My Adventure Mind</small>
                         </div>
                       </form>
                       </Zoom>
